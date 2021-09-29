@@ -1,0 +1,43 @@
+body {
+    background-color: lightblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    background-color: yellow;
+    color: red;
+}
+
+#box {
+    background-color: silver;
+    width: 600px;
+    height: 400px;
+}
+
+#box iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.square-box {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+}

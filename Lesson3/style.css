@@ -1,0 +1,26 @@
+table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+
+.carImage {
+    width: 300px;
+}
+
+.active {
+    background-color: blue;
+}
+
+.active a {
+    color: white;
+}
+
+.table-sm {
+    width: 100%;
+    height: 100%;
+}
+
+.table-td {
+    width: 100px;
+    height: 50px;
+}
