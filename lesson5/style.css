@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: block;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    background: rgb(4, 0, 36);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 4px 4px 5px rgb(104, 104, 104);
+    border-radius: 5px;
+
+}
+.image {
+   display: block;
+    width: 360px;
+    height: 200px;
+    margin: auto;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.avatarImg{
+    border: 3px solid rgba(248, 210, 38, 0.966);
+}
+.avatarImg img {
+    border-radius: 0;
+}
+
+.text {
+    margin: 20px 10px;
+}
+.title {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.stars {
+    margin: 10px;
+}
+
+.star {
+    color: orange;
+}
+.dwnBtn {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px;
+    border-radius: 7px;
+    color: #fff;
+    width: 180px;
+    border: 2px solid rgba(253, 0, 0, 0.4);
+
+}
+.dwnBtn:hover {
+    background: red;
+}
