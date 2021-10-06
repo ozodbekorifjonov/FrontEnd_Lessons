@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 50px auto;
+  min-height: 400px;
+  background-color: rgb(211, 204, 204);
+}
+
+.col {
+  width: 30%;
+  min-height: 200px;
+  background-color: green;
+}
+
+.col:nth-child(even) {
+  background-color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+}
