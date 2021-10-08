@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NotoSansDisplay-Medium;
+  src: url(fonts/NotoSansDisplay-Medium.ttf);
+}
+
+@font-face {
+  font-family: NotoSansDisplay-Bold;
+  src: url(fonts/NotoSansDisplay-Bold.ttf);
+}
+
+body {
+  font-family: NotoSansDisplay-Medium;
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+  color: white;
+}
+
+span {
+  font-family: NotoSansDisplay-Bold;
+}
+
+.paragraph {
+  font-family: Consolas, Monaco;
+}
+
+.container {
+  width: 1200px;
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.col {
+  width: 20%;
+  min-height: 200px;
+  border-radius: 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  /* justify-content: space-between; elementlarni ikki chetidan joy 
+  qoldirmasdan ularni orasida teng bosh joyni taqsimlaydi */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+}
+
+ul {
+    list-style-type: none;
+    background-color: white;
+}
+
+ul li {
+    /* display: inline; */
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color: silver;
+}
+
+ul li:hover a {
+    color: black;
+}
