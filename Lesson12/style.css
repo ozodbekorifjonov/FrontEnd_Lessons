@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Consolas, Monaco;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  color: white;
+  padding: 5px 2px;
+  border: 2px solid silver;
+  border-bottom: 2px solid violet;
+}
+
+input::placeholder {
+  color: silver;
+}
+
+.container {
+  width: 1200px;
+  margin: 50px auto;
+}
+
+section {
+  margin-bottom: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 54px;
+  color: white;
+}
+
+.box {
+  position: relative;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1,
+.col-2 {
+  position: absolute;
+  width: 800px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.container-full {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.col-1 {
+  left: 10%;
+}
+
+.col-2 {
+  right: -20%;
+}
+
+.col-2 .box {
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+}
