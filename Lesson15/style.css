@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.steps-section {
+  background-color: #fafafa;
+}
+
+.box h1 {
+  font-size: 61px;
+  line-height: 73px;
+}
+
+.box h6 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #a6a6a6;
+}
+
+.box {
+  padding: 0 30px;
+}
+
+.col-box-right img {
+  height: 210px;
+}
+
+.col-box-right-header {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.col-box h3 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.col-box p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+}
+
+.col-box-center-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
