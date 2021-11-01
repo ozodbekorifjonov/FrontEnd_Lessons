@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1 class="text-danger">Heading 1 danger</h1>
+            <h2 class="text-black">Heading 2 black</h2>
+            <h2 class="text-primary">Heading 2 primary</h2>
+            <h2 class="text-warning">Heading 2 warning</h2>
+            <h2 class="text-info">Heading 2 info</h2>
+            <h2 class="text-secondary text-decoration-underline text-capitalize text-opacity-25">Heading text</h2>
+
+            <div class="row">
+                <div class="col border">
+                    <h3>Card</h3>
+                    <div class="card">
+                        <div class="card-header bg-info">
+                            Card header
+                        </div>
+                        <div class="card-body">
+                            <h5>Card body</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, inventore magnam odit
+                                facere nemo tempora atque ex similique suscipit, placeat commodi dolore! Iusto
+                                accusantium provident maiores aspernatur vero omnis necessitatibus deserunt eos tempora
+                                nemo! Deserunt ad reiciendis qui. Maiores sed quisquam enim saepe distinctio ea quae
+                                provident soluta totam veritatis.</p>
+                        </div>
+                        <div class="card-footer">
+                            Card footer
+                        </div>
+                    </div>
+                </div>
+                <div class="col border">
+                    <h3>Alerts</h3>
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+                </div>
+                <div class="col border">
+                    <h3>Badges</h3>
+                    <button type="button" class="btn btn-dark">
+                        Messages <span class="badge bg-light text-black rounded-pill">10</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    var alertTrigger = document.getElementById('liveAlertBtn')
+
+    function alert(message, type) {
+        var wrapper = document.createElement('div')
+        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+        alertPlaceholder.append(wrapper)
+    }
+
+    if (alertTrigger) {
+        alertTrigger.addEventListener('click', function () {
+            alert('Nice, you triggered this alert message!', 'success')
+        })
+    }
+</script>
+
+</html>
