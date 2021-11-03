@@ -1,0 +1,301 @@
+body {
+  font-family: Roboto;
+}
+
+.navbar {
+  padding: 25px 0 !important;
+}
+
+.navbar-brand img {
+  width: 112px;
+  height: 39px;
+}
+
+.nav-link {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000 !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.custom-btn {
+  padding: 12px 32px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  background-color: transparent;
+}
+
+.custom-btn-light {
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+
+.custom-btn-light:hover {
+  border: 2px solid black;
+}
+
+.custom-btn-dark {
+  background-color: black;
+  color: white;
+}
+
+.header-content {
+  margin-top: 54px;
+  margin-bottom: 69px;
+}
+
+.header-box h6 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #a6a6a6;
+}
+
+.header-box h1 {
+  font-size: 64px;
+  line-height: 77px;
+  color: #000000;
+  padding: 0 25px 23px 25px;
+}
+
+.header-box p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+  margin-bottom: 36px;
+}
+
+.header-box {
+  padding: 0 80px;
+}
+
+.custom-row {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-col {
+  margin: 55px 31.5px 40px 31.5px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-col h6 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #686868;
+}
+
+.custom-col img {
+  margin-right: 11px;
+  width: 18px;
+  height: 13px;
+}
+
+.section-1 h6 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+.section-1 h1 {
+  font-weight: normal;
+  font-size: 61px;
+  line-height: 73px;
+  color: #000000;
+  padding: 0 25px;
+  margin-bottom: 89px;
+}
+
+.process-img {
+  width: 95%;
+}
+
+.steps-section {
+  background-color: #fafafa;
+}
+
+.box h1 {
+  font-size: 61px;
+  line-height: 73px;
+}
+
+.box h6 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #a6a6a6;
+}
+
+.box {
+  padding: 0 30px;
+}
+
+.col-box-right img {
+  height: 210px;
+}
+
+.col-box-right-header {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.col-box h3 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.col-box p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+}
+
+.col-box-center-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-3 {
+  margin: 80px 0 100px 0;
+}
+
+.section3-box-left {
+  margin-right: 118px;
+}
+
+.section3-box h1 {
+  font-weight: normal;
+  font-size: 61px;
+  line-height: 73px;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+.section3-box p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+  margin-bottom: 16px;
+}
+
+.section3-box img {
+  width: 100%;
+}
+
+.order-section {
+  background-color: #fafafa;
+  padding: 70px 0;
+}
+
+.orderBox-header {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 18px 16px;
+  align-items: center;
+}
+
+.orderBox-header .cart {
+  height: 24px;
+  margin-right: 7px;
+}
+
+.orderBox-header h5 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.orderBox-header h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.orderBox-header .toggle-bottom {
+  width: 12px;
+  height: 6px;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.orderBox-body .step {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+
+.step h6 {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.step img {
+  margin: 0 9px;
+  margin: 3px 9px 0 9px;
+  width: 5px;
+}
+
+.step .h6-shipping {
+  font-weight: 700;
+}
+
+.step .h6-payment {
+  color: #686868;
+}
+
+.order-details {
+  border: 1px solid #e4e4e4;
+  padding: 24px 19px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.order-details h3 {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #686868;
+}
+
+.order-details h5 {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-details h4 {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #e4e4e4;
+  margin: 21px 0;
+}
+
+.shipping-method .title {
+  font-size: 24px;
+  margin: 29px 0 19px 0;
+}
+
+.shipping-category {
+  border: 1px solid #e4e4e4;
+  background-color: white;
+  border-radius: 5px;
+}
