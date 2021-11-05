@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Progress, Spinner
+                        </div>
+                        <div class="card-body">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
+                                </div>
+                            </div>
+
+                            <div class="spinner-border mt-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+
+                            <div class="spinner-border text-primary spinner-border-md" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+
+                            <div class="spinner-border text-danger spinner-border-sm" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+
+                            <div class="spinner-grow text-warning" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            List group
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">An active item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item active" aria-current="true">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Tabs
+                        </div>
+                        <div class="card-body">
+
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Apple</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-samsung-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-samsung" type="button" role="tab"
+                                        aria-controls="pills-samsung" aria-selected="false">Samsung</button>
+                                </li>
+
+                            </ul>
+                            
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">Apple content</div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">Profile content</div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">Contact content</div>
+                                <div class="tab-pane fade" id="pills-samsung" role="tabpanel"
+                                    aria-labelledby="pills-samsung-tab">Samsung content</div>
+                            </div>
+
+                            <hr>
+
+                            <ul class="nav nav-pills mb-3" id="pills-tab2" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab2" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home2" type="button" role="tab" aria-controls="pills-home2"
+                                        aria-selected="true">Apple</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab2" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile2" type="button" role="tab"
+                                        aria-controls="pills-profile2" aria-selected="false">Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab2" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact2" type="button" role="tab"
+                                        aria-controls="pills-contact2" aria-selected="false">Contact</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-samsung-tab2" data-bs-toggle="pill"
+                                        data-bs-target="#pills-samsung2" type="button" role="tab"
+                                        aria-controls="pills-samsung2" aria-selected="false">Samsung</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent2">
+                                <div class="tab-pane fade show active" id="pills-home2" role="tabpanel"
+                                    aria-labelledby="pills-home-tab2">Apple
+                                    content</div>
+                                <div class="tab-pane fade" id="pills-profile2" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab2">Profile content
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact2" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab2">Contact content
+                                </div>
+                                <div class="tab-pane fade" id="pills-samsung2" role="tabpanel"
+                                    aria-labelledby="pills-samsung-tab2">Samsung content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+</html>
