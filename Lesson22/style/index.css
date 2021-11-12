@@ -1,0 +1,27 @@
+body {
+  background-color: lightcyan;
+}
+
+body section {
+  background-color: silver;
+  padding: 100px 0;
+}
+
+body section .container .row .col-4 h3,
+body section .container .row .col-5 h3 {
+  color: black;
+  letter-spacing: 5px;
+}
+
+body section .container .row .col-4 .card .card-body .custom-btn,
+body section .container .row .col-5 .card .card-body .custom-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid red;
+}
+
+body section .container .row .col-4 .card .card-body .custom-btn:nth-child(odd),
+body section .container .row .col-5 .card .card-body .custom-btn:nth-child(odd) {
+  padding: 5px 20px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,37 @@
+$color1: black;
+$buttonBorder: 1px solid red;
+
+body {
+  background-color: lightcyan;
+
+  section {
+    background-color: silver;
+    padding: 100px 0;
+
+    .container {
+      .row {
+        .col-4,
+        .col-5 {
+          h3 {
+            color: $color1;
+            letter-spacing: 5px;
+          }
+
+          .card {
+            .card-body {
+              .custom-btn {
+                background-color: $color1;
+                color: white;
+                border: $buttonBorder;
+              }
+
+              .custom-btn:nth-child(odd) {
+                padding: 5px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
