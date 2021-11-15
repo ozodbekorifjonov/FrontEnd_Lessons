@@ -1,0 +1,54 @@
+@import "custom";
+$colorButton: yellow;
+
+@mixin defaultButton {
+  border: 1px solid $colorButton;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: $colorButton;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+  }
+}
+
+body {
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: $colorButton;
+    padding: 10px;
+
+    button {
+      @include defaultButton;
+      background-color: black;
+    }
+
+    .red-btn {
+      @include defaultButton;
+      background-color: red;
+    }
+  }
+
+  .section-1 {
+    background-color: blue;
+  }
+
+  .section-2 {
+    background-color: green;
+  }
+
+  section {
+    .container {
+      .row-section-1 {
+        background-color: pink;
+      }
+      .row-section-2 {
+        background-color: lightcyan;
+      }
+    }
+  }
+}

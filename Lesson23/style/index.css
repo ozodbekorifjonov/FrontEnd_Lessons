@@ -1,0 +1,65 @@
+body {
+  background-color: silver;
+  padding: 20px 30px;
+}
+
+body h1 {
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+body .box {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  padding: 10px;
+}
+
+body .box button {
+  border: 1px solid yellow;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: yellow;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: black;
+}
+
+body .box button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+body .box .red-btn {
+  border: 1px solid yellow;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: yellow;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: red;
+}
+
+body .box .red-btn:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+body .section-1 {
+  background-color: blue;
+}
+
+body .section-2 {
+  background-color: green;
+}
+
+body section .container .row-section-1 {
+  background-color: pink;
+}
+
+body section .container .row-section-2 {
+  background-color: lightcyan;
+}
+/*# sourceMappingURL=index.css.map */

@@ -11,7 +11,34 @@
 </head>
 
 <body>
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel owl-theme owl-carousel-1">
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-42952.jpg" alt="nastol.com.ua-42952.jpg">
+        </div>
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-46773.jpg" alt="nastol.com.ua-46773.jpg">
+        </div>
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-46929.jpg" alt="nastol.com.ua-46929.jpg">
+        </div>
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-46978.jpg" alt="nastol.com.ua-46978.jpg">
+        </div>
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-47601.jpg" alt="nastol.com.ua-47601.jpg">
+        </div>
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-48048.jpg" alt="nastol.com.ua-448048.jpg">
+        </div>
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-48199.jpg" alt="nastol.com.ua-48199.jpg">
+        </div>
+        <div class="item">
+            <img width="100%" src="images/nastol.com.ua-48432.jpg" alt="nastol.com.ua-48432.jpg">
+        </div>
+    </div>
+
+    <div class="owl-carousel owl-theme owl-carousel-2">
         <div class="item">
             <img width="100%" src="images/nastol.com.ua-42952.jpg" alt="nastol.com.ua-42952.jpg">
         </div>
@@ -41,7 +68,7 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel-1').owlCarousel({
         loop: false,
         margin: 5,
         nav: true,
@@ -60,6 +87,28 @@
             }
         }
     })
+
+    $('.owl-carousel-2').owlCarousel({
+        loop: false,
+        margin: 5,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+
+
 </script>
 
 </html>
