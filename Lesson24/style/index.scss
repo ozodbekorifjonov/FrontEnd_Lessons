@@ -1,0 +1,63 @@
+@mixin mainButtonStyle($bgButton, $paddingBtn) {
+  color: white;
+  border-radius: 5px;
+  background-color: $bgButton;
+  border: 1px solid $bgButton;
+  padding: $paddingBtn;
+}
+
+body {
+  section {
+    .container {
+      padding-top: 100px;
+
+      .btn-1 {
+        @include mainButtonStyle(red, 8px 16px);
+        font-size: 20px;
+      }
+      .btn-2 {
+        @include mainButtonStyle(black, 6px 12px);
+      }
+      .btn-3 {
+        @include mainButtonStyle(green, 4px 8px);
+      }
+      .custom-btn-1 {
+        border: none;
+        border-radius: 25px;
+        background-color: yellow;
+      }
+
+      .custom-btn-2 {
+        @extend .custom-btn-1;
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+
+    section {
+      .container {
+        padding-top: 50px;
+
+        .row {
+          .col-xl-3 {
+            .custom-btn-1 {
+              background-color: lightblue;
+            }
+          }
+
+          .col-xl-6 {
+            text-align: center;
+            img {
+              width: 50% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

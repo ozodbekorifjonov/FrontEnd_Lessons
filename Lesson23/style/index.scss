@@ -34,7 +34,17 @@ body {
   }
 
   .section-1 {
-    background-color: blue;
+    background-color: #ebeef3;
+  }
+
+  .section-1-bg {
+    background-image: url(../images/Rectangle.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-position: 95% 250px;
+    background-attachment: fixed;
   }
 
   .section-2 {
@@ -42,6 +52,9 @@ body {
   }
 
   section {
+    height: 500px;
+    width: 100%;
+
     .container {
       .row-section-1 {
         background-color: pink;

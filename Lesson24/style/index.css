@@ -1,0 +1,57 @@
+body section .container {
+  padding-top: 100px;
+}
+
+body section .container .btn-1 {
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  border: 1px solid red;
+  padding: 8px 16px;
+  font-size: 20px;
+}
+
+body section .container .btn-2 {
+  color: white;
+  border-radius: 5px;
+  background-color: black;
+  border: 1px solid black;
+  padding: 6px 12px;
+}
+
+body section .container .btn-3 {
+  color: white;
+  border-radius: 5px;
+  background-color: green;
+  border: 1px solid green;
+  padding: 4px 8px;
+}
+
+body section .container .custom-btn-1, body section .container .custom-btn-2 {
+  border: none;
+  border-radius: 25px;
+  background-color: yellow;
+}
+
+body section .container .custom-btn-2 {
+  padding: 8px 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  body section .container {
+    padding-top: 50px;
+  }
+  body section .container .row .col-xl-3 .custom-btn-1, body section .container .row .col-xl-3 .custom-btn-2 {
+    background-color: lightblue;
+  }
+  body section .container .row .col-xl-6 {
+    text-align: center;
+  }
+  body section .container .row .col-xl-6 img {
+    width: 50% !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
