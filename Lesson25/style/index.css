@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Inter-Black;
+  src: url(../fonts/Inter-Black.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-ExtraBold;
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Inter-ExtraLight;
+  src: url(../fonts/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Inter-Light;
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: Inter-Medium;
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(../fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Inter-Thin;
+  src: url(../fonts/Inter-Thin.ttf);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  vertical-align: middle;
+  background-color: #f1b301;
+}
+
+.icon.icon-tel {
+  mask-image: url("../icons/tel.svg");
+  -webkit-mask-image: url("../icons/tel.svg");
+}
+
+.icon.icon-bag {
+  mask-image: url("../icons/bag.svg");
+  -webkit-mask-image: url("../icons/bag.svg");
+}
+
+.pm-0, body header nav, body header nav .container .collapse ul li a, body header nav .container .collapse ul li .d-flex a h6, body header nav .container .collapse ul li .d-flex a h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body header {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(66%, #ffffff), color-stop(34%, #800a7a));
+  background-image: linear-gradient(to right, #ffffff 66%, #800a7a 34%);
+}
+
+body header nav .container {
+  padding-top: 28px;
+}
+
+body header nav .container .navbar-brand img {
+  width: 52px;
+  height: 55px;
+}
+
+body header nav .container .collapse ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav .container .collapse ul li {
+  margin-left: 40px;
+}
+
+body header nav .container .collapse ul li a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222124 !important;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+body header nav .container .collapse ul li a:hover {
+  color: #f1b301 !important;
+}
+
+body header nav .container .collapse ul li .d-flex span {
+  margin-left: 40px;
+  margin-right: 19px;
+}
+
+body header nav .container .collapse ul li .d-flex .icon-tel {
+  width: 18px;
+  height: 18px;
+}
+
+body header nav .container .collapse ul li .d-flex a {
+  text-decoration: none;
+}
+
+body header nav .container .collapse ul li .d-flex a h6 {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+body header nav .container .collapse ul li .d-flex a h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=index.css.map */

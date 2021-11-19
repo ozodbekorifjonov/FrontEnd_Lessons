@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Inter-Black;
+  src: url(../fonts/Inter-Black.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-ExtraBold;
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Inter-ExtraLight;
+  src: url(../fonts/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Inter-Light;
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: Inter-Medium;
+  src: url(../fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(../fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Inter-Thin;
+  src: url(../fonts/Inter-Thin.ttf);
+}
+
+$colorWhite: #ffffff;
+$colorYellow: #f1b301;
+$colorDark: #222124;
+$colorViolet: #800a7a;
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  vertical-align: middle;
+  background-color: $colorYellow;
+
+  &.icon-tel {
+    mask-image: url("../icons/tel.svg");
+    -webkit-mask-image: url("../icons/tel.svg");
+  }
+
+  &.icon-bag {
+    mask-image: url("../icons/bag.svg");
+    -webkit-mask-image: url("../icons/bag.svg");
+  }
+}
+
+.pm-0 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  header {
+    background-image: linear-gradient(
+      to right,
+      $colorWhite 66%,
+      $colorViolet 34%
+    );
+
+    nav {
+      @extend .pm-0;
+
+      .container {
+        padding-top: 28px;
+
+        .navbar-brand {
+          img {
+            width: 52px;
+            height: 55px;
+          }
+        }
+        .collapse {
+          ul {
+            align-items: center;
+            li {
+              margin-left: 40px;
+
+              a {
+                @extend .pm-0;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: $colorDark !important;
+                transition: all 0.2s;
+
+                &:hover {
+                  color: $colorYellow !important;
+                }
+              }
+
+              .d-flex {
+                span {
+                  margin-left: 40px;
+                  margin-right: 19px;
+                }
+
+                .icon-tel {
+                  width: 18px;
+                  height: 18px;
+                }
+
+                a {
+                  text-decoration: none;
+
+                  h6 {
+                    @extend .pm-0;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: $colorWhite;
+                  }
+                  h3 {
+                    @extend .pm-0;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: $colorWhite;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
