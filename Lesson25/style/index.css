@@ -72,12 +72,18 @@
   padding: 0 !important;
 }
 
+body {
+  font-family: Inter-Regular !important;
+}
+
 body header {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(66%, #ffffff), color-stop(34%, #800a7a));
   background-image: linear-gradient(to right, #ffffff 66%, #800a7a 34%);
 }
 
 body header nav .container {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(69%, #ffffff), color-stop(31%, #800a7a));
+  background-image: linear-gradient(to right, #ffffff 69%, #800a7a 31%);
   padding-top: 28px;
 }
 
@@ -135,5 +141,58 @@ body header nav .container .collapse ul li .d-flex a h3 {
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
+}
+
+body header .header-content .container {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(69%, #ffffff), color-stop(31%, #800a7a));
+  background-image: linear-gradient(to right, #ffffff 69%, #800a7a 31%);
+}
+
+body header .header-content .container .row .col-xl-5 h1 {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 85px;
+  color: #222124;
+  font-family: Inter-ExtraBold;
+  margin-top: 125px;
+}
+
+body header .header-content .container .row .col-xl-5 p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #222124;
+  padding-right: 40px;
+}
+
+body header .header-content .container .row .col-xl-7 .box-img {
+  text-align: right;
+  margin-top: 68px;
+}
+
+body header .header-content .container .row .col-xl-7 .box-img img {
+  -webkit-transform: translateX(70px) scale(1.1);
+          transform: translateX(70px) scale(1.1);
+}
+
+body header .header-content .container .row .col-xl-6 .owl-carousel-1 {
+  margin-top: -190px;
+}
+
+body header .header-content .container .row .col-xl-6 .owl-carousel-1 .item .item-card {
+  border-radius: 12px;
+  height: 200px;
+  margin-right: 30px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header .header-content .container .row .col-xl-6 .owl-carousel-1 .item .item-card.item-yellow {
+  background: linear-gradient(315.49deg, #ffc85c 1.32%, #f1b301 96.68%);
+}
+
+body header .header-content .container .row .col-xl-6 .owl-carousel-1 .item .item-card.item-violet {
+  background-color: #800a7a;
 }
 /*# sourceMappingURL=index.css.map */

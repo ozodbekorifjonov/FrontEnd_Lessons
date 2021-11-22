@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="style/index.css">
 </head>
 
@@ -62,8 +64,69 @@
                 </div>
             </div>
         </nav>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-xs-12">
+                        <h1>
+                            Siz izlagan
+                            mazzali
+                            ta’mlar
+                        </h1>
+                        <p>When an unknown printer took a galley of type
+                            scrambled it to make a type specimen</p>
+                    </div>
+                    <div class="col-xl-7 col-xs-12">
+                        <div class="box-img">
+                            <img class="w-100" src="images/hamburger-min.png">
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="owl-carousel owl-theme owl-carousel-1">
+                            <div class="item">
+                                <div class="item-card item-yellow">
+                                    <span>
+                                        Yangi
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-card item-violet">
+                                    <span>
+                                        Ko’p sotilgan
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    $('.owl-carousel-1').owlCarousel({
+        loop: false,
+        margin: 5,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+</script>
 
 </html>
