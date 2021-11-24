@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="icons/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon icon-hamburger"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                Menyu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Bolalar uchun
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Filiallar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center">
+                                <span class="icon icon-tel"></span>
+                                <a href="tel:+998712005400">
+                                    <h6>(+99871)</h6>
+                                    <h3>200-54-00</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center">
+                                <div class="counter-box">
+                                    <span class="icon icon-bag"></span>
+                                    <div class="counter">3</div>
+                                </div>
+
+                                <a href="#">
+                                    <h3>Korzina</h3>
+                                    <h6>125,400 UZS</h6>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-xs-12 order-xl-1 order-2">
+                        <h1>
+                            Siz izlagan
+                            mazzali
+                            ta’mlar
+                        </h1>
+                        <p>When an unknown printer took a galley of type
+                            scrambled it to make a type specimen</p>
+                    </div>
+                    <div class="col-xl-7 col-xs-12 order-xl-2 order-1">
+                        <div class="box-img">
+                            <img src="images/hamburger-min.png">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 order-xl-3 order-3">
+                        <div class="owl-carousel owl-theme owl-carousel-1">
+                            <div class="item">
+                                <div class="item-card item-yellow">
+                                    <span class="badge">
+                                        <img src="icons/flame.svg" alt="flame">
+                                        Yangi
+                                    </span>
+                                    <h3>Pit <br>
+                                        <span>-sa</span>
+                                    </h3>
+                                    <img class="item-img" src="images/pizza.png" alt="pizza">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-card item-violet">
+                                    <span class="badge">
+                                        <img src="icons/rocket.svg" alt="rocket">
+                                        Ko’p sotilgan
+                                    </span>
+                                    <h3> <span>Kom</span> <br>
+                                        -bo</h3>
+                                    <img class="item-img" src="images/kombo.png" alt="kombo">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    $('.owl-carousel-1').owlCarousel({
+        loop: false,
+        margin: 5,
+        nav: false,
+        autoplay: true,
+        dots: false,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1.5
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+</script>
+
+</html>
