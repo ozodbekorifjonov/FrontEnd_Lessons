@@ -1049,23 +1049,122 @@
         </div>
     </section>
     <section class="app-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-sm-12">
-                    <h1>Mobil ilovamiz
-                        orqali buyurtma
-                        berish yanada osonroq</h1>
+        <div class="app-violet-div">
+            <div class="app-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-sm-12 order-xl-1 order-2">
+                            <h1>
+                                Mobil ilovamiz <br>
+                                orqali buyurtma <br>
+                                berish yanada osonroq
+                            </h1>
+                            <button class="outline-btn">
+                                <span class="icon icon-play-market"></span>
+                            </button>
+                            <button class="outline-btn">
+                                <span class="icon icon-apple"></span>
+                            </button>
+                        </div>
+                        <div class="col-xl-6 col-sm-12 order-xl-2 order-1">
+                            <img src="images/phone.png" alt="phone">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9">
+                    <div class="d-flex">
+                        <img class="brand-logo" src="icons/logo.svg" alt="logo">
+                        <div class="footer-collapse">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample1">
+                                Asosiy
+                            </button>
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user
+                                    activates the relevant trigger.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-collapse">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample2">
+                                Qo’shimcha
+                            </button>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user
+                                    activates the relevant trigger.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <ul class="ul-1">
+                            <li>Asosiy</li>
+                            <li>Kompaniya haqida</li>
+                            <li>Filiallar</li>
+                            <li>Bolala uchun</li>
+                        </ul>
+                        <ul class="ul-2">
+                            <li>Qo’shimcha</li>
+                            <li>Kompaniya haqida</li>
+                            <li>Filiallar</li>
+                            <li>Bolala uchun</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <h3>Biz bilan aloqa</h3>
+                    <h5>(+998 71) 200-54-00</h5>
+                    <p>100011, Toshkent sh. Shayxontohur tumani,
+                        Zarqaynar ko’chasi, 3B-uy</p>
+                </div>
+            </div>
+            <div class="one-footer-line">
+                <div class="left">
+                    <h5>© Maxway, 2020</h5>
+                </div>
+                <div class="right">
+                    <a href="https://www.youtube.com/user/Apple">
+                        <span class="icon icon-you-tube"></span>
+                    </a>
+                    <a href="https://www.youtube.com/user/Apple">
+                        <span class="icon icon-facebook"></span>
+                    </a>
+
+                    <a href="https://www.youtube.com/user/Apple">
+                        <span class="icon icon-you-tube"></span>
+                    </a>
+                    <a href="https://www.youtube.com/user/Apple">
+                        <span class="icon icon-facebook"></span>
+                    </a>
+                    <a href="https://www.youtube.com/user/Apple">
+                        <span class="icon icon-you-tube"></span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="bootstrap/bootstrap.bundle.min.js"></script>
 <script>
     $('.owl-carousel-1').owlCarousel({
-        loop: false,
         margin: 5,
         nav: false,
         autoplay: true,
@@ -1074,12 +1173,15 @@
         autoplayHoverPause: true,
         responsive: {
             0: {
+                loop: true,
                 items: 1.5
             },
             600: {
+                loop: true,
                 items: 3
             },
             1000: {
+                loop: false,
                 items: 2
             }
         }
