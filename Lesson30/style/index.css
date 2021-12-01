@@ -508,7 +508,6 @@ body .app-section .app-violet-div .app-div .container .row .col-xl-6 .outline-bt
   border-radius: 46px;
   padding: 18px 31px;
   background-color: transparent;
-  margin-right: 30px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -525,6 +524,10 @@ body .app-section .app-violet-div .app-div .container .row .col-xl-6 .outline-bt
 
 body .app-section .app-violet-div .app-div .container .row .col-xl-6 .outline-btn:hover .icon {
   background-color: #800a7a;
+}
+
+body .app-section .app-violet-div .app-div .container .row .col-xl-6 .btn-first {
+  margin-right: 30px;
 }
 
 body .app-section .app-violet-div .app-div .container .row .col-xl-6 img {
@@ -643,6 +646,17 @@ body footer .container .one-footer-line .right a .icon-facebook:hover {
   background-color: blue;
 }
 
+@media (min-width: 1000px) and (max-width: 1367px) {
+  body header .header-content .container {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(63%, #ffffff), color-stop(32%, #800a7a)) !important;
+    background-image: linear-gradient(to right, #ffffff 63%, #800a7a 32%) !important;
+  }
+  body header nav .container {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(63%, #ffffff), color-stop(32%, #800a7a)) !important;
+    background-image: linear-gradient(to right, #ffffff 63%, #800a7a 32%) !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   body header {
     background: white;
@@ -703,6 +717,7 @@ body footer .container .one-footer-line .right a .icon-facebook:hover {
     text-align: center;
     color: #ffffff;
     margin-bottom: 0;
+    padding-right: unset;
   }
   body header .header-content .container .row .col-xl-7 .box-img {
     margin-top: 114px;
@@ -748,6 +763,9 @@ body footer .container .one-footer-line .right a .icon-facebook:hover {
     line-height: 44px;
     text-align: center;
   }
+  body .category-section .container .tab-content .tab-pane .tab-box .row .col-xl-6:nth-child(odd) {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
   body .category-section .container .tab-content .tab-pane .tab-box .row .col-xl-6 .card .card-body {
     padding: 21px;
   }
@@ -769,6 +787,11 @@ body footer .container .one-footer-line .right a .icon-facebook:hover {
   body .category-section .container .tab-content .tab-pane .tab-box .row .col-xl-6 .card .card-body .d-flex .card-right h2 {
     font-size: 18px;
     line-height: 22px;
+  }
+  body .category-section .container .tab-content .tab-pane .tab-box .row .col-xl-6 .card .card-body .d-flex .card-right h2 img {
+    width: 17px;
+    height: 17px;
+    margin-left: 12px;
   }
   body .category-section .container .tab-content .tab-pane .tab-box .row .col-xl-6 .card .card-body .d-flex .card-right p {
     width: 100%;
@@ -842,13 +865,14 @@ body footer .container .one-footer-line .right a .icon-facebook:hover {
     line-height: 18px;
     color: #003846;
     padding: 14px;
+    position: relative;
   }
   body footer .container .row .col-xl-9 .d-flex .footer-collapse button .icon {
     width: 14px;
     height: 7px;
-    margin-top: 8px;
-    margin-right: 38px;
-    float: right;
+    position: absolute;
+    top: 20px;
+    right: 30px;
     background-color: #7b7b7b;
   }
   body footer .container .row .col-xl-9 .d-flex .ul-1,
@@ -890,6 +914,12 @@ body footer .container .one-footer-line .right a .icon-facebook:hover {
   }
   body footer .container .one-footer-line .left {
     margin-top: 46px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body .category-section .card-right {
+    margin-left: 19px !important;
   }
 }
 

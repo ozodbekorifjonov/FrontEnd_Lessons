@@ -517,7 +517,6 @@ body {
                 border-radius: 46px;
                 padding: 18px 31px;
                 background-color: transparent;
-                margin-right: 30px;
                 transition: all 0.5s;
 
                 .icon {
@@ -533,6 +532,9 @@ body {
                     background-color: $colorViolet;
                   }
                 }
+              }
+              .btn-first {
+                margin-right: 30px;
               }
               img {
                 transform: scale(1.5) translateY(-66px);
@@ -649,6 +651,25 @@ body {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1367px) {
+  body header {
+    .header-content .container {
+      background-image: linear-gradient(
+        to right,
+        #ffffff 63%,
+        #800a7a 32%
+      ) !important;
+    }
+    nav .container {
+      background-image: linear-gradient(
+        to right,
+        #ffffff 63%,
+        #800a7a 32%
+      ) !important;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   body {
     header {
@@ -723,6 +744,7 @@ body {
                 text-align: center;
                 color: $colorWhite;
                 margin-bottom: 0;
+                padding-right: unset;
               }
             }
             .col-xl-7 {
@@ -785,46 +807,57 @@ body {
                 text-align: center;
               }
 
-              .row .col-xl-6 .card {
-                .card-body {
-                  padding: 21px;
-                  .d-flex {
-                    .card-left {
-                      img {
-                        width: 127.57px;
-                        height: 127.57px;
-                      }
-                      span {
-                        width: 35.43px;
-                        height: 35.43px;
-
+              .row .col-xl-6 {
+                &:nth-child(odd) {
+                  padding-right: calc(var(--bs-gutter-x) * 0.5);
+                }
+                .card {
+                  .card-body {
+                    padding: 21px;
+                    .d-flex {
+                      .card-left {
                         img {
-                          width: 17.01px;
-                          height: 17.01px;
+                          width: 127.57px;
+                          height: 127.57px;
+                        }
+                        span {
+                          width: 35.43px;
+                          height: 35.43px;
+
+                          img {
+                            width: 17.01px;
+                            height: 17.01px;
+                          }
                         }
                       }
-                    }
-                    .card-right {
-                      margin-left: 29px;
-                      h2 {
-                        font-size: 18px;
-                        line-height: 22px;
-                      }
-                      p {
-                        width: 100%;
-                        font-size: 12px;
-                        line-height: 15px;
-                      }
-                      .one-line {
-                        h3 {
+                      .card-right {
+                        margin-left: 29px;
+                        h2 {
                           font-size: 18px;
                           line-height: 22px;
+
+                          img {
+                            width: 17px;
+                            height: 17px;
+                            margin-left: 12px;
+                          }
                         }
-                        button {
-                          padding: 13px;
-                          .icon-plus {
-                            width: 10px;
-                            height: 10px;
+                        p {
+                          width: 100%;
+                          font-size: 12px;
+                          line-height: 15px;
+                        }
+                        .one-line {
+                          h3 {
+                            font-size: 18px;
+                            line-height: 22px;
+                          }
+                          button {
+                            padding: 13px;
+                            .icon-plus {
+                              width: 10px;
+                              height: 10px;
+                            }
                           }
                         }
                       }
@@ -906,13 +939,14 @@ body {
                   line-height: 18px;
                   color: #003846;
                   padding: 14px;
+                  position: relative;
 
                   .icon {
                     width: 14px;
                     height: 7px;
-                    margin-top: 8px;
-                    margin-right: 38px;
-                    float: right;
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
                     background-color: #7b7b7b;
                   }
                 }
@@ -962,6 +996,12 @@ body {
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body .category-section .card-right {
+    margin-left: 19px !important;
   }
 }
 
