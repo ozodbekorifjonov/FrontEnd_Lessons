@@ -1,9 +1,4 @@
 @font-face {
-  font-family: Inter-Black;
-  src: url(../fonts/Inter-Black.ttf);
-}
-
-@font-face {
   font-family: Inter-Bold;
   src: url(../fonts/Inter-Bold.ttf);
 }
@@ -14,21 +9,6 @@
 }
 
 @font-face {
-  font-family: Inter-ExtraLight;
-  src: url(../fonts/Inter-ExtraLight.ttf);
-}
-
-@font-face {
-  font-family: Inter-Light;
-  src: url(../fonts/Inter-Light.ttf);
-}
-
-@font-face {
-  font-family: Inter-Medium;
-  src: url(../fonts/Inter-Light.ttf);
-}
-
-@font-face {
   font-family: Inter-Regular;
   src: url(../fonts/Inter-Regular.ttf);
 }
@@ -36,11 +16,6 @@
 @font-face {
   font-family: Inter-SemiBold;
   src: url(../fonts/Inter-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: Inter-Thin;
-  src: url(../fonts/Inter-Thin.ttf);
 }
 
 $colorWhite: #ffffff;
@@ -776,11 +751,21 @@ body {
       .container {
         .tab-header {
           display: block;
+          border: none;
+          padding-top: 0;
 
           .nav-pills {
             width: 100%;
             overflow: auto;
             flex-wrap: nowrap;
+
+            li {
+              button {
+                font-size: 16px !important;
+                line-height: 19px !important;
+                padding: 14px 20px !important;
+              }
+            }
           }
 
           .dropdown {
@@ -792,6 +777,14 @@ body {
         .tab-content {
           .tab-pane {
             .tab-box {
+              padding-top: 40px;
+
+              h1 {
+                font-size: 36px;
+                line-height: 44px;
+                text-align: center;
+              }
+
               .row .col-xl-6 .card {
                 .card-body {
                   padding: 21px;
@@ -920,7 +913,7 @@ body {
                     margin-top: 8px;
                     margin-right: 38px;
                     float: right;
-                    background-color: #7B7B7B;
+                    background-color: #7b7b7b;
                   }
                 }
               }
